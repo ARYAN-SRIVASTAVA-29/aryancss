@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #FFFFFB;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+section{
+    padding: 20vh 0;
+}
+
+.one__icon{
+    background: lightslategrey;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+
+}
+
+.one{
+    background: gold;
+    position: relative;
+    height: 30vh;
+}
+.one::after,
+.one::before{
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 150px;
+    background: gold;
+    bottom: -1em;
+    z-index: 10;
+    
+}
+
+.one::before{
+    right: 50%;
+    transform: skew(0, 20deg);
+}
+
+.one::after{
+    left: 50%;
+    transform: skew(0, -20deg);
+}
+
+.two{
+    background-color: lightcoral;
+}
